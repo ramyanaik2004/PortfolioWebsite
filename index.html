@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramya Naik | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Ramya Naik</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="mode-btn" onclick="toggleMode()">
+            Dark Mode
+        </button>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h3>Hello, I'm</h3>
+            <h1>Ramya Naik</h1>
+            <h2>Aspiring Full Stack Developer</h2>
+            <p>Electronics and Communication Engineering student passionate about Java programming and frontend web development. I enjoy building responsive and user-friendly websites.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn-outline">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="ramya.jpg" alt="Profile Image" >
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-box">
+            <p>I am a Electronics and Communication Engineering student with strong interest in Java Programming and Frontend Development. I enjoy learning modern technologies and creating responsive websites with clean UI design.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-title">
+            <h2>Technical Skills</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skill-card">Java</div>
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">MySQL</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-title">
+            <h2>Projects</h2>
+        </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Student Management System</h3>
+                <p>A Java application used to manage student records such as student details, attendance, marks, and course information. It helps automate academic record management efficiently.</p>
+            </div>
+            <div class="project-card">
+                <h3>Online Food Ordering System</h3>
+                <p>A web-based Java project where users can browse food items, place orders, and make payments online. Admins can manage menus, orders, and customer details.</p>
+            </div>
+            <div class="project-card">
+                <h3>Library Management System</h3>
+                <p>A Java application designed to manage books, issue/return records, and member details in a library. It reduces manual work and improves record tracking.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>Email : ramyanaik1738@gmail.com</p>
+                <p>Phone : +91 9148736086</p>
+                <p>Location : Karnataka, India</p>
+            </div>
+            <form action="https://formsubmit.co/ramyanaik1738@gmail.com"
+            method="POST"
+            onsubmit="showMessage(event)">
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <br><br>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <br><br>
+                <textarea name="message" placeholder="Enter Your Message" required></textarea>
+                <br><br>
+                <input type="hidden" name="_captcha" value="false">
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="social-section">
+        <h2>Connect With Me</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ramya-naik-ab523a263/" target="_blank" class="social-btn"> LinkedIn </a>
+            <a href="https://github.com/ramyanaik2004" target="_blank" class="social-btn"> GitHub </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Ramya Naik | Portfolio Website</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
